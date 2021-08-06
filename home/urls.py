@@ -3,6 +3,7 @@ from .views import *
 
 app_name = "home"
 
+#WE HAVE CREATED This file by ourself, it doesnot exist when creating the app
 urlpatterns = [
     path('', home, name = 'home'),
     path('about', about, name = 'about'),
