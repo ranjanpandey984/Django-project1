@@ -19,3 +19,13 @@ class Info(models.Model):
 
 	def __str__(self):
 		return self.address
+
+
+class Review(models.Model):
+	name = models.CharField(max_length = 300)
+	designation = models.CharField(max_length = 500)
+	comment = models.TextField(max_length = 500)
+	image = models.TextField(max_length = 500)
+
+	def __str__(self):
+		return self.name
